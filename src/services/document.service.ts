@@ -100,7 +100,7 @@ export async function processDocument(documentId: string): Promise<void> {
     const docContent = await downloadDocument(document.s3Key);
 
     console.log(`Splitting document "${document.title}" into chunks...`);
-    const chunks: Chunk[] = textSplitter.splitText(docContent.content);
+    const chunks: Chunk[] = await textSplitter.splitText(docContent.content);
     console.log(`Created ${chunks.length} chunks`);
 
     for (let i = 0; i < chunks.length; i++) {
