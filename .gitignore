@@ -1,0 +1,80 @@
+# ==========================================
+# Dependencies
+# ==========================================
+node_modules/
+.pnp
+.pnp.js
+
+# ==========================================
+# Build Output
+# ==========================================
+dist/
+build/
+*.tsbuildinfo
+
+# ==========================================
+# Environment Variables (NEVER commit these!)
+# ==========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ==========================================
+# AI Model Caches (Xenova/Transformers)
+# These can be hundreds of MBs or GBs!
+# ==========================================
+# Xenova usually saves to your OS cache, but 
+# just in case it creates a local folder:
+.xenova/
+models/
+*.onnx
+*.bin
+
+# ==========================================
+# Drizzle ORM
+# ==========================================
+# Uncomment the line below if you DON'T want to 
+# track your SQL migration files in git.
+# (If solo, ignore them. If on a team, keep them).
+# drizzle/
+
+# ==========================================
+# Logs
+# ==========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==========================================
+# Editor / IDE Folders
+# ==========================================
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ==========================================
+# Operating System Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ==========================================
+# Docker / Local Data (if mounted locally)
+# ==========================================
+postgres_data/
+redis_data/
+minio_data/

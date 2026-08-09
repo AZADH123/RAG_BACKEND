@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1786209027419,
+      "tag": "0000_add_pgvector",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1786209127701,
+      "tag": "0001_greedy_unicorn",
+      "breakpoints": true
+    }
+  ]
+}
